@@ -1,0 +1,119 @@
+:root {
+    --bg-gradient: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); /* Fondo suave */
+    --card-bg: rgba(255, 255, 255, 0.9); /* Blanco traslúcido */
+    --accent-color: #8e2c10; /* Café con leche (Principal) */
+    --secondary-color: #faedcd; /* Crema */
+    --text-main: #481717; /* Marrón oscuro para lectura */
+    --link-hover: #ccd5ae; /* Verde menta suave para botones */
+}
+
+body {
+    background: var(--bg-gradient);
+    color: var(--text-main);
+    font-family: 'Poppins', sans-serif; /* Tipografía moderna */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* El contenedor con efecto de cristal (Glassmorphism) */
+.container {
+    background: var(--card-bg);
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    max-width: 650px;
+    width: 90%;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* Títulos con color */
+h1, h2, h3 {
+    color: var(--accent-color);
+    letter-spacing: 1px;
+    text-transform: lowercase; /* Estilo muy aesthetic */
+}
+
+/* Fotos con borde de color */
+img.profile-img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50% 20% 50% 20%; /* Forma orgánica irregular */
+    border: 8px solid var(--secondary-color);
+    margin-bottom: 25px;
+}
+
+img.profile-img:hover {
+
+}
+
+/* Botones con degradado */
+.btn {
+    text-decoration: none;
+    background: var(--accent-color);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 15px;
+    transition: all 0.4s;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(212, 163, 115, 0.3);
+}
+
+.btn:hover {
+    background: var(--link-hover);
+    color: #521919;
+    transform: translateY(-3px);
+}
+
+/* Tablas con colores alternados */
+table {
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+}
+
+th {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 15px;
+}
+
+td {
+    padding: 15px;
+    background-color: var(--secondary-color);
+    border-bottom: 2px solid white;
+}
+
+/* Hipervínculos sociales */
+.social-links a {
+    color: var(--accent-color);
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+.social-links a:hover {
+    color: var(--link-hover);
+    letter-spacing: 2px;
+}
+
+/* Lista de intereses */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border-left: 5px solid var(--accent-color);
+}
